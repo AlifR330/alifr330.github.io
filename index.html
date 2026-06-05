@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>ARNews - Portal Berita</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">📰 ARNews</div>
+
+  <nav>
+    <button onclick="filterNews('all')">Home</button>
+    <button onclick="filterNews('teknologi')">Teknologi</button>
+    <button onclick="filterNews('olahraga')">Olahraga</button>
+    <button onclick="filterNews('dunia')">Dunia</button>
+  </nav>
+
+  <input type="text" id="search" placeholder="Cari berita..." onkeyup="searchNews()">
+</header>
+
+<div class="breaking">
+  🔴 Breaking News: MBG tidak berguna?
+</div>
+
+<main>
+
+  <!-- ARTIKEL UTAMA -->
+  <section class="news-grid" id="newsContainer">
+
+    <div class="card teknologi">
+      <h3>Keadaan WNI</h3>
+      <p>Ada apa dengan pemerintah sekarang!?</p>
+      <a href="article.html">Baca selengkapnya</a>
+    </div>
+
+    <div class="card olahraga">
+      <h3>Timnas Indonesia Menang 3-0</h3>
+      <p>Dalam laga internasional kemarin...</p>
+      <a href="article.html">Baca selengkapnya</a>
+    </div>
+
+    <div class="card dunia">
+      <h3>Perubahan Iklim Semakin Ekstrem</h3>
+      <p>BMKG mengeluarkan peringatan cuaca...</p>
+      <a href="article.html">Baca selengkapnya</a>
+    </div>
+
+    <div class="card teknologi">
+      <h3>HP Lipat Generasi Baru Rilis</h3>
+      <p>Perusahaan besar merilis smartphone inovatif...</p>
+      <a href="article.html">Baca selengkapnya</a>
+    </div>
+
+  </section>
+
+  <!-- SIDEBAR TRENDING -->
+  <aside>
+    <h3>🔥 Trending</h3>
+    <ul>
+      <li>AI menggantikan pekerjaan manusia?</li>
+      <li>Harga Bitcoin naik lagi</li>
+      <li>Game terbaru viral di Indonesia</li>
+      <li>Cuaca ekstrem di Asia</li>
+    </ul>
+  </aside>
+
+</main>
+
+<footer>
+  © 2026 ARNews - Portal Berita Modern
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
